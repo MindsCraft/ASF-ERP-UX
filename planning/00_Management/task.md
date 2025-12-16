@@ -7,10 +7,12 @@
 - [/] Research & Discovery
     - [x] Create `requirements.md` (User Stories & Functional Specs)
     - [x] Create `user_personas.md` (Roles & Responsibilities)
-    - [ ] Create `information_architecture.md` (Sitemap & Navigation Structure)
+    - [x] Conduct Market Research (Version 2.0 with Visuals)
+    - [x] Create `data_structure.md` (Schema Models)
+    - [x] Create `information_architecture.md` (Sitemap & Navigation Structure)
 - [ ] UX Design (Experience)
-    - [ ] Define `user_flows.md` (Key Journeys)
-    - [ ] Create Wireframes (Low-Fidelity)
+    - [x] Define `user_flows.md` (Key Journeys)
+    - [/] Create Wireframes (Low-Fidelity)
     - [ ] Plan Interactive Prototypes
 - [ ] UI Design (Visuals)
     - [ ] Create `design_system.md` (Typography, Color, Spacing, Shadows)

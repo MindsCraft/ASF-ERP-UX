@@ -33,7 +33,7 @@ The ERP-HRM module for ASF Office serves as a centralized human resource managem
 • User & Security Management
 
 **In Scope:**
-• Workforce administration ((employee master data, hierarchy, roles, branches, departments, institutions)
+• Workforce administration (employee master data, hierarchy, roles, branches, departments, institutions)
 • Time and attendance with biometric login/logout tracking
 • Leave automation with approval workflows and leave balance tracking
 • Monthly payroll including salary breakdown, statutory deductions, arrear, tax, and allowances
