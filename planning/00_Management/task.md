@@ -28,5 +28,5 @@
     - [ ] Create `design_system.md`
     - [ ] Design Component Library
     - [ ] High-Fidelity Mockups
-- [ ] Requirements & Contracting
-    - [ ] Create Professional Project Quotation (Mindscraft.dev)
+- [x] Requirements & Contracting
+    - [x] Create Professional Project Quotation (Mindscraft.dev)
