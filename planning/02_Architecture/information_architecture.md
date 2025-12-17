@@ -1,97 +1,111 @@
-# Information Architecture & Sitemap
-**Project:** ASF ERP - HRM Module
-**Version:** 1.0
+# Master Information Architecture & Sitemap
+**Status:** Canonical Reference
+**Alignment:** 100% Sync with SRS (FRS001 - FRS011)
 
-## 1. High-Level Navigation Structure
-The application will use a **Sidebar Navigation** layout. The menu items will dynamically toggle based on the logged-in user's role.
-
-### 1.1 Core Menu Items (Top Level)
-1.  **Dashboard**
-2.  **Employee Management**
-3.  **Attendance**
-4.  **Leave Management**
-5.  **Payroll**
-6.  **Expense**
-7.  **Notice Board**
-8.  **Reports**
-9.  **User Management** (Admin Only)
-10. **Settings / Configuration** (Admin Only)
+This document serves as the absolute blueprint for the application. Every screen listed here maps directly to a Functional Requirement Specification (FRS).
 
 ---
 
-## 2. Detailed Sitemap
+## 1. System Navigation (Sidebar)
+**Ordering:** Strictly sequential based on SRS.
 
-### 2.1 Dashboard
-*   **Overview:** Key metrics (Employee count, Attendance summary, Pending actions).
-*   **Widgets:**
-    *   Attendance Today (Present/Absent/Late).
-    *   Leave Requests (Pending Approval).
-    *   Notice Board (Latest 5).
-    *   My Stats (For Employee: Leave Balance, Attendance %).
-
-### 2.2 Employee Management
-*   **All Employees:** Searchable list table.
-*   **Add Employee:** Multi-step form (Basic, Employment, Personal, Bank).
-*   **Employee Profile:** (Tabs: Overview, Personal, Job, Documents, Salary).
-*   **Designation Hierarchy:** Tree view of org structure (Optional).
-
-### 2.3 Attendance
-*   **My Attendance:** Calendar view of own logs.
-*   **Daily Log:** Admin view of all employee scans today.
-*   **Monthly Report:** Grid view of attendance status (P/A/L) for the whole month.
-*   **Manual Entry:** Form to fix missing punches (Admin/Manager only).
-
-### 2.4 Leave Management
-*   **My Leaves:**
-    *   **Apply for Leave:** Form (Type, Date, Reason).
-    *   **Leave History:** List of past applications with status.
-    *   **Leave Balance:** Cards showing Available/Used days.
-*   **Leave Requests (Manager/Admin):**
-    *   **Pending Approval:** Queue of requests to approve/reject.
-    *   **All Applications:** Historical log of team's leaves.
-*   **Leave Calendar:** Company-wide or Team-wide holiday/leave view.
-
-### 2.5 Payroll
-*   **Salary Sheet:** Generated monthly payroll list.
-*   **Pay Slips:** Individual view to download PDF.
-*   **Salary Certificate:** Request/Generate form.
-*   **Tax & PF:** Summary reports of deductions.
-
-### 2.6 Expense
-*   **My Claims:** List of own expenses + "New Claim" button.
-*   **Process Claims (Manager):** Approval queue.
-*   **History:** Archive of paid claims.
-
-### 2.7 Notice Board
-*   **All Notices:** List view of active notices.
-*   **Create Notice:** Form with audience selector and attachment upload.
-
-### 2.8 Reports
-*   **Employee Reports:** (Joiners, Leavers, Status).
-*   **Attendance Reports:** (Absenteeism, Late Arrivals).
-*   **Financial Reports:** (Payroll summary, Expense summary).
-
-### 2.9 User Management (Admin)
-*   **Users:** List of system logins.
-*   **Roles & Permissions:** Matrix to toggle feature access.
-
-### 2.10 Settings
-*   **General:** Organization info, Logo.
-*   **Biometric Config:** API keys, Device IPs.
-*   **Leave Types:** Manage categories (Sick, Casual).
-*   **Salary Rules:** Allowances, Deductions setup.
-*   **Holidays:** Calendar configuration.
+| Ref ID | Module | Navigation Label | Access |
+| :--- | :--- | :--- | :--- |
+| **FRS002** | HRM Dashboard | **Dashboard** | All |
+| **FRS003** | Employee Mgmt | **Employees** | Admin/Manager |
+| **FRS004** | Payroll Mgmt | **Payroll** | Finance/Admin |
+| **FRS005** | Leave Mgmt | **Leave** | All |
+| **FRS006** | Attendance | **Attendance** | All |
+| **FRS007** | Expense Mgmt | **Expense** | All |
+| **FRS008** | Policy Mgmt | **Policies** | Admin |
+| **FRS009** | Notice Board | **Notices** | All |
+| **FRS010** | User Mgmt | **Users** | Super Admin |
+| **FRS011** | Reporting | **Reports** | Admin/Finance |
 
 ---
 
-## 3. Role-Based View Matrix
+## 2. Screen-by-Screen Specification
 
-| Feature | Super Admin | HR Admin | Manager | Employee |
-| :--- | :---: | :---: | :---: | :---: |
-| **Dashboard** | Full Org Stats | Full Ops Stats | Team Stats | Personal Stats |
-| **Employee** | Create/Edit/Delete | Create/Edit | Read (Team) | Read (Self) |
-| **Attendance** | Full Access | Full Access | View Team | View Self |
-| **Leave** | Override | Approve/Manage | Approve Team | Apply |
-| **Payroll** | Config/Process | Process | View Team | View Slip |
-| **User Mgmt** | Full Access | Full Access | - | - |
-| **Settings** | Full Access | Limited | - | - |
+### 3.1 User Signup & Login (FRS001)
+**Scope:** Public Access (No Sidebar).
+
+*   **Screen 1.0: Login Page**
+    *   **Input:** Email/Username, Password.
+    *   **Actions:** Sign In, Continue with Google, Forgot Password, Sign Up (Toggle).
+*   **Screen 1.1: Signup Page**
+    *   **Input:** First Name, Last Name, Email, Mobile, Address, Password, Confirm Password, Role Request.
+    *   **Process:** triggers Admin Approval workflow.
+
+### 3.2 HRM Dashboard (FRS002)
+*   **Screen 2.0: Admin Dashboard**
+    *   **Stats Cards:** Total Employees, New Hires, Permanent, Probation.
+    *   **Widgets:** Attendance (Pie Chart), Pending Leaves (List), Notices (List).
+    *   **Filters:** Day, Month, Date Range.
+
+### 3.3 Employee Management (FRS003)
+*   **Screen 3.0: All Employees (Grid)**
+    *   **Columns:** Name, ID, Dept, Branch, Mobile, Status.
+    *   **Filters:** Institution, Branch, Dept, Status.
+*   **Screen 3.1: Add Employee (Wizard)**
+    *   **Step 1 Basic:** Name, ID, Mobile, Email.
+    *   **Step 2 Org:** Institution, Branch, Dept, Designation.
+    *   **Step 3 Emp:** Join Date, Status, Salary, Bank Info.
+    *   **Step 4 Personal:** DOB, Blood Grp, NID, Marital.
+    *   **Step 5:** Emergency Contact, Address.
+    *   **Step 6:** Attachments (CV, Image).
+*   **Screen 3.2: Employee Profile**
+    *   **Tabs:** Overview (Stats), Personal, Job, Documents.
+
+### 3.4 Payroll Management (FRS004)
+*   **Screen 4.0: Monthly Salary Sheet**
+    *   **Grid:** Name, Designation, Basic, Rent, Medical, Conv, OT, Absent Deduction, Tax, PF, **Net Pay**.
+    *   **Actions:** Process, Export Bank Template.
+*   **Screen 4.1: Payslip View**
+    *   **Layout:** Earnings vs Deductions.
+    *   **Actions:** Download PDF, Email.
+
+### 3.5 Leave Management (FRS005)
+*   **Screen 5.0: Leave Dashboard**
+    *   **Metrics:** Total, Accepted, Rejected, Pending.
+*   **Screen 5.1: Apply Modal**
+    *   **Inputs:** Type, Start Date, End Date, Reason.
+    *   **Logic:** Auto-calc days, Supervisor routing.
+*   **Screen 5.2: Approval Queue**
+    *   **List:** Pending requests with "Approve/Reject" buttons.
+
+### 3.6 Attendance Tracking (FRS006)
+*   **Screen 6.0: Daily Log (Admin)**
+    *   **Grid:** Name, Date, In-Time, Out-Time, Status.
+    *   **Integration:** Synced with Biometric.
+*   **Screen 6.1: My Attendance**
+    *   **View:** Calendar showing own Present/Absent status.
+
+### 3.7 Expense Management (FRS007)
+*   **Screen 7.0: My Claims**
+    *   **Form:** Category (Travel/Food), Amount, Attachment (Receipt).
+*   **Screen 7.1: Claim Manager**
+    *   **List:** Pending approvals.
+    *   **Config:** Set Category Limits.
+
+### 3.8 Policy Management (FRS008)
+*   **Screen 8.0: Holiday Calendar**
+    *   **Actions:** Add/Edit Holidays.
+*   **Screen 8.1: Salary Rules**
+    *   **Inputs:** % setup for House Rent, Medical, PF.
+
+### 3.9 Notice Board (FRS009)
+*   **Screen 9.0: Notice Feed**
+    *   **List:** Title, Date, Download.
+*   **Screen 9.1: Create Notice**
+    *   **Inputs:** Title, Body, Attachment, Target (Branch/Dept).
+
+### 3.10 User Management (FRS010)
+*   **Screen 10.0: User Directory**
+    *   **Grid:** Name, Role, Employee Link, Status.
+    *   **Actions:** Activate/Deactivate, Soft Delete.
+*   **Screen 10.1: Permission Matrix**
+    *   **Grid:** Roles vs Modules (Checkboxes).
+
+### 3.11 Reports (FRS011)
+*   **Screen 11.0: Report Generator**
+    *   **Input:** Select Module, Select Date Range, Select Output Format (PDF/Excel).

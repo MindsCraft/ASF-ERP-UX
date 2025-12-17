@@ -11,10 +11,22 @@
     - [x] Create `data_structure.md` (Schema Models)
     - [x] Create `information_architecture.md` (Sitemap & Navigation Structure)
 - [ ] UX Design (Experience)
-    - [x] Define `user_flows.md` (Key Journeys)
-    - [/] Create Wireframes (Low-Fidelity)
+    - [/] Create Wireframes (Low-Fidelity & High Alignment)
+        - [x] W01: User Signup & Login (FRS001)
+        - [x] W02: HRM Dashboard (FRS002)
+        - [x] W03: Employee Management (FRS003)
+        - [x] W04: Payroll Management (FRS004)
+        - [x] W05: Leave Management (FRS005) (Refine to Master Spec)
+        - [x] W06: Attendance Tracking (FRS006)
+        - [ ] W07: Expense Management (FRS007)
+        - [ ] W08: Policy Management (FRS008)
+        - [ ] W09: Notice Board (FRS009)
+        - [ ] W10: User Management (FRS010)
+        - [ ] W11: Report Module (FRS011)
     - [ ] Plan Interactive Prototypes
 - [ ] UI Design (Visuals)
-    - [ ] Create `design_system.md` (Typography, Color, Spacing, Shadows)
-    - [ ] Design Component Library (Buttons, Inputs, Cards)
+    - [ ] Create `design_system.md`
+    - [ ] Design Component Library
     - [ ] High-Fidelity Mockups
+- [ ] Requirements & Contracting
+    - [ ] Create Professional Project Quotation (Mindscraft.dev)

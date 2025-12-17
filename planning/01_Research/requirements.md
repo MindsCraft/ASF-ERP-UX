@@ -132,6 +132,20 @@ In this chapter, the functional requirements associated with a feature will be d
 *   **Calendar:** Read-only calendar showing holidays, events, and notices.
 *   **User-Specific:** System will display the user-wise specific dashboard based on the user’s role and permission.
 
+### 3.3 Employee Management Features (FRS003)
+*   **Data Entry Fields:**
+    *   **Basic:** Name, ID (Auto/Manual), Mobile, Email.
+    *   **Org:** Institution (As-Sunnah, Madrasatus Sunnah), Branch, Dept, Designation.
+    *   **Employment:** Joining Date, Status (Probation/Volunteer/Intern/Permanent), Salary Info, Bank Info.
+    *   **Personal:** DOB, Blood Group, NID/Passport, Marital Status.
+    *   **Emergency:** Name, Relation, Mobile, Address.
+    *   **Address:** Present, Permanent.
+    *   **Attachments:** CV, Profile Image.
+*   **Employee List:** Filterable (Inst, Branch, Dept, Desig, Status). Columns: Name, ID, Dept, Mobile, Status.
+*   **Edit:** Track edit history. Validation on edits.
+*   **View Page:** All info + Leave Calendar + "Total Days of Employment" (Auto-calc).
+*   **Constraints:** Check Duplicate ID. Secure storage.
+
 ### 3.4 Payroll Management Module (FRS004)
 *   **User Story:** User performs all payroll management functions and processing.
 *   **Salary Structure Automation:**
