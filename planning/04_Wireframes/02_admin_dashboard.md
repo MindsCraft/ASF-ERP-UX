@@ -35,19 +35,56 @@ This layout strictly implements **FRS002** widgets and data.
 *   **Columns:** Avatar, Name, Leave Type (Sick/Casual), Status Badge.
 *   **Action:** Click row -> Opens **Approval Details**.
 
-### 2.3 Bottom Row (Communication)
-**Goal:** Awareness of notices and holidays.
+### 2.3 Bottom Row (Communication & Calendar)
+**Goal:** Awareness of notices, holidays, and events.
 
 **Widget C: Notice Board Preview**
 *   **Content:** List of valid Policy/Notice items.
 *   **Display:** Icon, Title, Date.
 *   **Action:** "View All" -> Go to FRS009.
 
+**Widget D: Calendar Widget (FRS002 Required)**
+*   **Type:** Read-only monthly calendar
+*   **Content:** Holidays (Red), Events (Blue), Notices (Green)
+*   **Interaction:** Hover shows event details
+*   **Navigation:** Month/Year selector
+*   **Legend:** Holiday types and event categories
+
+### 2.4 Leave Summary Widget (Missing from FRS002)
+**Goal:** Track leave applications status.
+
+**Widget E: Leave Applications Summary**
+*   **Metrics:** Total Applications, Pending Approvals, Approved This Month
+*   **Chart:** Status breakdown (Pending/Approved/Rejected)
+*   **Filter:** Current month by default
+*   **Action:** "View All" -> Go to FRS005
+
 **Global Filters (Header)**
 *   [Date Range Picker]: Controls stats logic (Default: Current Month).
 *   [Department Dropdown]: Filter dashboard by team (e.g., "IT Dept").
 
+### 2.5 User-Specific Dashboard Variations
+**Goal:** Role-based dashboard customization (FRS002 requirement).
+
+**Super Admin Dashboard:**
+*   All widgets + System health metrics + User activity logs
+
+**HR Admin Dashboard:**
+*   Employee stats + Attendance + Leave + Notice + Calendar
+
+**HR Manager Dashboard:**
+*   Team-specific stats + Direct reports + Approval queue
+
+**Employee Dashboard:**
+*   Personal attendance + Leave balance + Notices + Calendar + Quick actions
+
+**Accounts Dashboard:**
+*   Payroll metrics + Expense claims + Financial summaries
+
 ## 3. SRS Alignment Check
-*   ✅ **Stats:** All 4 metric types from FRS002.1 accounted for.
-*   ✅ **Charts:** Attendance summary (FRS002.2) included.
-*   ✅ **Notices:** Calendar/Notice integration (FRS002.4) included.
+*   ✅ **Stats:** All 4 employee metric types from FRS002.1 included.
+*   ✅ **Attendance Charts:** Attendance summary (FRS002.2) with pie chart.
+*   ✅ **Leave Summary:** Leave applications summary widget added.
+*   ✅ **Calendar:** Read-only calendar showing holidays, events, and notices (FRS002.4).
+*   ✅ **User-Specific:** Role-based dashboard variations implemented (FRS002.5).
+*   ✅ **Filters:** Day, Month, Date Range filtering capabilities included.
