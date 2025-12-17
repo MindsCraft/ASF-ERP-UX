@@ -22,7 +22,7 @@
         - [ ] W08: Policy Management (FRS008)
         - [ ] W09: Notice Board (FRS009)
         - [ ] W10: User Management (FRS010)
-        - [ ] W11: Report Module (FRS011)
+        - [x] W11: Report Module (FRS011)
     - [ ] Plan Interactive Prototypes
 - [ ] UI Design (Visuals)
     - [ ] Create `design_system.md`
