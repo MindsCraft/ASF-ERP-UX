@@ -3,6 +3,7 @@
 **Role:** Unauthenticated User
 
 ![Auth Sequence](../assets/wireframe_auth_master.png)
+![Auth Flow Concept](../assets/wireframe_auth_flow.png)
 
 ## 1. Visual Layout
 **Structure:** Split-Screen Layout.

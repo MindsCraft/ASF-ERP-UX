@@ -2,7 +2,9 @@
 **Requirement ID:** FRS005
 **Role:** Employee / Supervisor / HR
 
-*(Visual Placeholder: Image Generation Quota Paused)*
+![Leave Application](../assets/wireframe_leave_application.png)
+*(Visual Concept: Employee Portal)*
+![Employee Portal](../assets/employee_portal.png)
 
 ## 1. Screen 5.0: Leave Dashboard (Employee View)
 **Goal:** Track personal status.

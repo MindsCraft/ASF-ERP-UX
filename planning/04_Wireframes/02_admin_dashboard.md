@@ -2,7 +2,9 @@
 **Requirement ID:** FRS002
 **Role:** HR Administrator / System Admin
 
-*(Visual Placeholder: Image Generation Quota Paused - Will be added later)*
+![HR Admin Dashboard](../assets/wireframe_admin_dashboard.png)
+*(Visual Concept: Modern Dashboard)*
+![Modern HR Dashboard](../assets/modern_hr_dashboard.png)
 
 ## 1. Visual Layout
 **Style:** Dashboard Grid System (Responsive).
