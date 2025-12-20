@@ -37,8 +37,31 @@
 *   **Table Right (Deductions):** PF, Tax, Absent, Advance Salary.
 *   **Footer:** Signatures (HR Manager, Accounts Officer).
 *   **Actions:** [Download PDF], [Email to Self].
+*   **Auto-Email:** System automatically emails payslip once processed (FRS004 requirement).
 
-## 3. Screen 4.2: Salary Configuration
+## 2.5 Screen 4.2: Salary Certificate Generator
+**Goal:** HR creates salary certificates for employees (FRS004 requirement).
+
+**Form Layout:**
+*   **Employee Selection:** Dropdown with search
+*   **Certificate Type:** Dropdown (Employment, Salary, Experience)
+*   **Salary Details:** Auto-populated from current salary structure
+*   **Custom Fields:**
+    *   Purpose of certificate
+    *   Additional remarks
+    *   Effective date
+*   **Template Options:** Letterhead selection
+*   **Preview:** Live preview of certificate
+*   **Actions:** [Generate PDF], [Print], [Email to Employee]
+
+**Certificate Content:**
+*   Company letterhead and details
+*   Employee information and tenure
+*   Salary breakdown (Basic, Allowances, Gross)
+*   Official signatures and seal
+*   Issue date and validity
+
+## 3. Screen 4.3: Salary Configuration
 **Goal:** Setting the rules (FRS004.2).
 
 *   **Designation Selector:** Dropdown (e.g., "Senior Teacher").
@@ -49,6 +72,9 @@
     *   PF Deduction % (Input)
 
 ## 4. SRS Alignment Check
-*   ✅ **Columns:** All 11 columns from FRS004.3 included.
+*   ✅ **Columns:** All 12 columns from FRS004 payroll list included.
 *   ✅ **Outputs:** Bank Transfer & PDF generation actions included.
-*   ✅ **Automation:** Deduction logic cited.
+*   ✅ **Auto-Email:** Payslips automatically emailed once processed.
+*   ✅ **Salary Certificate:** HR can create certificates with customizable format.
+*   ✅ **Automation:** Salary structure and deduction logic implemented.
+*   ✅ **Payment Methods:** Bank, Cash, Cheque options supported.

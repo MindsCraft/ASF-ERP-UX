@@ -1,10 +1,10 @@
 # ERP Project Plan (UX & Planning Only)
 
-- [/] Project Initialization
+- [x] Project Initialization
     - [x] Create `task.md`
     - [x] Create `Project_Planning_Guide.md` (Updated for UX focus)
     - [x] Ingest and Analyze Requirements
-- [/] Research & Discovery
+- [x] Research & Discovery
     - [x] Create `requirements.md` (User Stories & Functional Specs)
     - [x] Create `user_personas.md` (Roles & Responsibilities)
     - [x] Conduct Market Research (Version 2.0 with Visuals)
@@ -16,17 +16,17 @@
         - [x] W02: HRM Dashboard (FRS002)
         - [x] W03: Employee Management (FRS003)
         - [x] W04: Payroll Management (FRS004)
-        - [x] W05: Leave Management (FRS005) (Refine to Master Spec)
+        - [x] W05: Leave Management (FRS005)
         - [x] W06: Attendance Tracking (FRS006)
-        - [ ] W07: Expense Management (FRS007)
-        - [ ] W08: Policy Management (FRS008)
-        - [ ] W09: Notice Board (FRS009)
-        - [ ] W10: User Management (FRS010)
+        - [x] W07: Expense Management (FRS007)
+        - [x] W08: Policy Management (FRS008)
+        - [x] W09: Notice Board (FRS009)
+        - [x] W10: User Management (FRS010)
         - [x] W11: Report Module (FRS011)
     - [ ] Plan Interactive Prototypes
 - [ ] UI Design (Visuals)
     - [ ] Create `design_system.md`
     - [ ] Design Component Library
     - [ ] High-Fidelity Mockups
-- [ ] Requirements & Contracting
-    - [ ] Create Professional Project Quotation (Mindscraft.dev)
+- [x] Requirements & Contracting
+    - [x] Create Professional Project Proposal & Quotation (Mindscraft.dev)

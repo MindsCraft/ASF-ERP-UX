@@ -2,7 +2,7 @@
 **Requirement ID:** FRS003
 **Role:** HR Manager / Admin
 
-*(Visual Placeholder: Image Generation Quota Paused - Will be added later)*
+![Employee Profile](../assets/wireframe_employee_profile.png)
 
 ## 1. Screen 3.0: Employee List (Index Page)
 **Goal:** Search and filter the workforce.
