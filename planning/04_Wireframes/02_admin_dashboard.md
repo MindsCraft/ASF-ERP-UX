@@ -3,8 +3,6 @@
 **Role:** HR Administrator / System Admin
 
 ![HR Admin Dashboard](../assets/wireframe_admin_dashboard.png)
-*(Visual Concept: Modern Dashboard)*
-![Modern HR Dashboard](../assets/modern_hr_dashboard.png)
 
 ## 1. Visual Layout
 **Style:** Dashboard Grid System (Responsive).
